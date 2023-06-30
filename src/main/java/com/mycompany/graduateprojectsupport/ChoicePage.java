@@ -9,7 +9,6 @@ public class ChoicePage extends javax.swing.JFrame {
     ArrayList<MentorPoint> listPoint;
     public String detai, hocHam, diemTB, namCongTac, soDoAn;
    
-
     public ChoicePage() {
         initComponents();
         setLocationRelativeTo(null);
@@ -240,6 +239,9 @@ public class ChoicePage extends javax.swing.JFrame {
             GetListMentorPoint lt = new GetListMentorPoint();
             listPoint = lt.getAllGiangVien(list, hocHam, NCT, dtb, detaiSinhVien);
             table1.setDataPonit(listPoint);
+            
+            Topsis topsis = new Topsis(listPoint); 
+            topsis.calculate();
         }
         
     }//GEN-LAST:event_ShowButtonActionPerformed

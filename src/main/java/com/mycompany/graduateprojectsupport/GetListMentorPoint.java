@@ -8,7 +8,7 @@ public class GetListMentorPoint {
     private List<MentorPoint> listResult;
     private int chenhLechNCT;
     private float chenhLechDTB;
-    private String chenhLechHH;
+    private int chenhLechHH;
     private int chenhLechDoAn;
     private int cungDetai;
 
@@ -34,30 +34,30 @@ public class GetListMentorPoint {
             String hoham = list.get(i).getHocHam();
 
             if(HH.equals("-- Chọn học vị --")){
-                chenhLechHH = hoham;
+                chenhLechHH = 0;
             }else{
                 if(hoham.charAt(0) == 'T'){
                     if(HH.charAt(0) == 'T'){
                         if(hoham.charAt(1) == HH.charAt(1)){
-                            chenhLechHH = "0";
+                            chenhLechHH = 0;
                         }else if(hoham.charAt(1) == 'i' && HH.charAt(1)== 'h'){
-                            chenhLechHH = "1";
+                            chenhLechHH = 1;
                         }else
-                            chenhLechHH = "-1";                            
+                            chenhLechHH = -1;                        
                     }else{
                         if(hoham.charAt(1) == 'i')
-                            chenhLechHH = "-1";
+                            chenhLechHH = 1;
                         else
-                            chenhLechHH = "-2";
+                            chenhLechHH = -2;
                     }
                 }else {
                     if(HH.charAt(0) == 'G')
-                        chenhLechHH = "0";
+                        chenhLechHH = 0;
                     else {
                         if(HH.charAt(1) == 'i')
-                            chenhLechHH = "1";
+                            chenhLechHH = 1;
                         else
-                            chenhLechHH = "2";
+                            chenhLechHH = 2;
                     }             
                 }
             } 

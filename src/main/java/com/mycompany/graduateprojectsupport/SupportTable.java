@@ -72,7 +72,7 @@ public class SupportTable extends JTable{
         for(int i = 0; i< list.size(); i++){
             String ten = list.get(i).getHoTen();
             int congtac = list.get(i).getSoNamCongTac();
-            String hoham = list.get(i).getHocHam();
+            int hoham = list.get(i).getHocHam();
             float diemTb = list.get(i).getDiemDoAn();
             int deTai = list.get(i).getDetai();
             

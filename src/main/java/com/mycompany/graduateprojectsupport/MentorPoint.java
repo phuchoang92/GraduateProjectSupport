@@ -5,12 +5,12 @@ public class MentorPoint {
     private int MSGV;
     private int SoNamCongTac;
     private String HoTen;
-    private String HocHam;
+    private int HocHam;
     private float DiemDoAn;
     private int SoDoAN;
     private int detai;
     
-    public MentorPoint(int MSGV, int SoNamCongTac, String HoTen, String HocHam, float DiemDoAn, int SoDoAN, int detai) {
+    public MentorPoint(int MSGV, int SoNamCongTac, String HoTen, int HocHam, float DiemDoAn, int SoDoAN, int detai) {
         this.MSGV = MSGV;
         this.SoNamCongTac = SoNamCongTac;
         this.HoTen = HoTen;
@@ -52,11 +52,11 @@ public class MentorPoint {
         this.HoTen = HoTen;
     }
 
-    public String getHocHam() {
+    public int getHocHam() {
         return HocHam;
     }
 
-    public void setHocHam(String HocHam) {
+    public void setHocHam(int HocHam) {
         this.HocHam = HocHam;
     }
 
